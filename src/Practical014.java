@@ -1,11 +1,4 @@
-import jdk.nashorn.api.tree.CatchTree;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
 import java.sql.*;
-import java.util.Scanner;
 
 
 public class Practical014 {
@@ -13,10 +6,7 @@ public class Practical014 {
         String url = "jdbc:mysql://localhost/demostud";
         String Uname = "root";
         String pass = "";
-        String query = "SELECT * FROM STUDENT_MASTER";
-        Scanner scn = new Scanner(System.in);
-        System.out.println("Enter Enroll no :");
-        scn.nextInt();
+        String query = "INSERT INTO student_master VALUES(5,'Nishant','Vadnaggar')";
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -26,7 +16,8 @@ public class Practical014 {
             Statement st = con.createStatement();
             System.out.println("Statement Created Successfully");
             ResultSet rs = st.executeQuery(query);
-            System.out.println("Query Execuated Successfully");
+            System.out.println("Query Executed Successfully");
+            System.out.println("Record Inserted Successfully");
             rs.close();
             st.close();
             con.close();

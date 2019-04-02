@@ -14,7 +14,7 @@ public class Practical013 {
             Statement st = con.createStatement();
             System.out.println("Statement Created Successfully");
             ResultSet rs = st.executeQuery(query);
-            System.out.println("Query Execuated Successfully");
+            System.out.println("Query Executed Successfully");
             System.out.println("| Enroll | Name | City |");
             System.out.println("|----------------------|");
             while (rs.next()) {
