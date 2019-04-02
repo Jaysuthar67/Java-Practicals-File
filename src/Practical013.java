@@ -18,8 +18,14 @@ public class Practical013 {
             System.out.println("| Enroll | Name | City |");
             System.out.println("|----------------------|");
             while (rs.next()) {
-                System.out.println("| " + rs.getInt("enroll"));
+                System.out.print("| " + rs.getInt("enroll"));
+                System.out.print(" | " + rs.getString("name"));
+                System.out.print(" | " + rs.getString("city") + " |\n");
             }
+            System.out.println("|----------------------|");
+            rs.close();
+            st.close();
+            con.close();
         } catch (SQLException sqlex) {
             sqlex.printStackTrace();
         } catch (Exception e) {
