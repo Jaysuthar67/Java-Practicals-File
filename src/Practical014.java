@@ -15,10 +15,9 @@ public class Practical014 {
             System.out.println("Connected Successfully");
             Statement st = con.createStatement();
             System.out.println("Statement Created Successfully");
-            ResultSet rs = st.executeQuery(query);
+            st.executeUpdate(query);
             System.out.println("Query Executed Successfully");
             System.out.println("Record Inserted Successfully");
-            rs.close();
             st.close();
             con.close();
         } catch (SQLException sqlex) {
