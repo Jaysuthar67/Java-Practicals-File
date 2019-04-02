@@ -15,7 +15,11 @@ public class Practical013 {
             System.out.println("Statement Created Successfully");
             ResultSet rs = st.executeQuery(query);
             System.out.println("Query Execuated Successfully");
-            System.out.println(rs);
+            System.out.println("| Enroll | Name | City |");
+            System.out.println("|----------------------|");
+            while (rs.next()) {
+                System.out.println("| " + rs.getInt("enroll"));
+            }
         } catch (SQLException sqlex) {
             sqlex.printStackTrace();
         } catch (Exception e) {
