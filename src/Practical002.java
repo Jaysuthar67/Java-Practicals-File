@@ -10,4 +10,5 @@ public class Practical002 extends Applet {
         g.fillOval(190, 20, 50, 50);
         g.fillOval(250, 20, 50, 50);
     }
+
 }
