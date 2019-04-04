@@ -1,6 +1,6 @@
 import java.applet.Applet;
 import java.awt.*;
-@Deprecated
+
 public class Practical002 extends Applet {
     public void paint(Graphics g) {
         g.setColor(Color.red);
