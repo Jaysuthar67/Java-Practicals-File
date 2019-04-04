@@ -6,7 +6,7 @@ public class Practical014 {
         String url = "jdbc:mysql://localhost/demostud";
         String Uname = "root";
         String pass = "";
-        String query = "INSERT INTO student_master VALUES(5,'Nishant','Vadnaggar')";
+        String query = "INSERT INTO student_master VALUES(5,'Nishant','Vadnagar')";
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
